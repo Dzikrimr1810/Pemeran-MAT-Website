@@ -62,7 +62,7 @@ export default function Hero () {
               }}
             className="md:w-[400px] flex flex-col justify-between w-full">
                 <div className="md:text-[74px] text-[48px] font-light leading-tight">A <span className="font-semibold">Journey</span> Through <span className="font-semibold text-lightRed">Loss</span> and <span className="font-semibold text-lightRed">Healing</span></div>
-                <p className="text-justify md:pr-10 text-[16px] md:text-[12px] mt-44 md:mt-10 md:pt-0 md:pb-20">
+                <p className="text-justify md:pr-10 text-[16px] md:text-[12px] mt-36 md:mt-10 md:pt-0 md:pb-20">
                 Grief is a personal journey through denial, anger, bargaining, sadness, and finally acceptance, where we find strength to carry memories and move forward with resilience. Through this exhibition, presented by the Visual Communication Design students of Universitas Sebelas Maret, class of 2023, we invite you to explore and reflect on this profound human experience.
                 </p>
             </motion.div>
@@ -115,12 +115,12 @@ export default function Hero () {
                     Experience the journey through <span className="font-semibold">our exhibition!</span>
                     </div>
                     <div className="w-full py-2 md:py-0 flex md:flex-col md:items-end items-center md:justify-between justify-evenly">
-                        <div className="px-8 md:py-2 md:my-3 text-[20px] w-fit flex justify-center items-center bg-white/30 rounded-lg text-breakWhite border-breakWhite border-[1px] font-light backdrop-blur-sm">
+                        <div className="md:px-8 px-5 md:py-2 md:my-3 py-1 text-[15px] md:text-[20px] w-fit flex justify-center items-center bg-white/30 rounded-lg text-breakWhite border-breakWhite border-[1px] font-light backdrop-blur-sm">
                             {countdown}
                         </div>
-                        <Link href="/catalogue" className="px-5 md:px-0 flex group md:justify-between justify-center md:items-start items-center h-fit md:h-20 md:w-4/5 rounded-lg bg-breakWhite text-black">
-                            <div className="md:px-5 md:pr-0 pr-2 md:py-2 py-1"><span className="font-semibold group-hover:text-lightRed duration-300 ease-in-out">Start</span> the Journey!</div>
-                            <GoArrowRight className="text-[28px] md:text-[56px] md:self-end font-light flex items-center justify-center rotate-45 group-hover:rotate-0 group-hover:text-lightRed duration-300 ease-in-out"/>
+                        <Link href="/catalogue" className="px-3 md:px-0 flex group md:justify-between justify-center md:items-start items-center h-fit md:h-20 md:w-4/5 rounded-lg bg-breakWhite text-black">
+                            <div className="md:px-5 md:text-base text-[16px] md:pr-0 pr-2 md:py-2 py-1"><span className="font-semibold group-hover:text-lightRed duration-300 ease-in-out">Start</span> the Journey!</div>
+                            <GoArrowRight className="text-[28px] md:text-[56px] md:self-end font-light flex items-center justify-end md:justify-center rotate-45 group-hover:rotate-0 group-hover:text-lightRed duration-300 ease-in-out"/>
                         </Link>
                     </div>
                 </motion.div>
