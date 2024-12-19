@@ -5,11 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { simplifiedCatalogue } from '@/app/interface';
 
+export const dynamic = "force-dynamic"
 
 const  ProjectGrief = ({ data }: { data: simplifiedCatalogue[] }) => {
 
 
-  
 return (
     <div className='md:columns-4 columns-2'>
       {data.map((items,index)=>(

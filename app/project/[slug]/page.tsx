@@ -4,36 +4,15 @@ import ImgProject from "@/app/components/imgProject";
 import { simplifiedProject } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
 import Link from "next/link";
+import getDataProject from "./dataProject";
 
-async function getData(slug: string): Promise<simplifiedProject | null> {
-  const query = `*[_type=='project' && slug.current == "${slug}"][0] {
-    _id,
-    _type,
-    name,
-    "creatorName": createdBy.name,
-    "creatorIg": createdBy.ig,
-    description,
-    "slug": slug.current,
-    "categoryName": category->name,
-    "typeproject": typeproject->typeproject,
-    "imageUrl": image
-  }`;
-
-  try {
-    const data = await client.fetch(query);
-    return data || null; // Kembalikan null jika data tidak ditemukan
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    return null; // Tangani error dan kembalikan null
-  }
-}
-
+export const dynamic = "force-dynamic"
 export default async function ProjectPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  const data: simplifiedProject | null = await getData(params.slug);
+  const data: simplifiedProject | null = await getDataProject(params.slug);
 
   // Validasi jika data tidak ditemukan
   if (!data) {
