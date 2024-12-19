@@ -2,7 +2,6 @@
 import { ScrollArea } from "@/components/ui/scroll-area"
 import ImgProject from "@/app/components/imgProject";
 import { simplifiedProject } from "@/app/interface";
-import { client } from "@/app/lib/sanity";
 import Link from "next/link";
 import getDataProject from "./dataProject";
 

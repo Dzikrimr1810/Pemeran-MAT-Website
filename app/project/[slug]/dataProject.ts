@@ -1,5 +1,5 @@
-import { simplifiedProject } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
+
 
 export default async function getDataProject(slug: string) {
   const query = `*[_type=='project' && slug.current == "${slug}"][0] {
