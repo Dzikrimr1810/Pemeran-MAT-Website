@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolage.className} bg-background w-screen overflow-hidden`}
+        className={`${bricolage.className} bg-background`}
       >
         <Intropage />
       <Header />
