@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lightRed: #FF3300;
+  --darkRed: #B70000;
+  --breakWhite: #F5F5F5;
+  --gray: #463F3F;
+  --background: #180000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --lightRed: #FF3300;
+    --gray: #463F3F;
+    --background: #180000;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menyembunyikan scrollbar untuk Chrome, Edge, Safari */
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Menyembunyikan scrollbar untuk Firefox */
+.scroll-none {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Menyembunyikan scrollbar untuk Internet Explorer */
+.scroll-none {
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+
