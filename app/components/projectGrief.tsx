@@ -1,34 +1,15 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import { client } from '@/app/lib/sanity';
 import { simplifiedCatalogue } from '@/app/interface';
 
-async function getData(grief : string){
-  const query = `*[_type=='project' && category->name == '${grief}'] {
-    _id,
-    _type,
-    name,
-    "creatorName": createdBy.name,
-      "creatorIg": createdBy.ig,
-    description,
-    "slug": slug.current,
-    "categoryName": category->name,
-    "typeproject": typeproject->typeproject,
-    "imageUrl": image[0].asset->url
-      }`;
 
-const data = await client.fetch(query);
-console.log(data)
-return data
-}
-
-const  ProjectGrief = async ({params} : {params : {grief : string}}) => {
-const data: simplifiedCatalogue[] = await getData(params.grief)
+const  ProjectGrief = ({ data }: { data: simplifiedCatalogue[] }) => {
 
 
-console.log(params.grief)
-
+  
 return (
     <div className='md:columns-4 columns-2'>
       {data.map((items,index)=>(
