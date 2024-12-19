@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Categories from '@/app/components/categories';
 import ProjectGrief from '@/app/components/projectGrief';
+import { client } from '@/app/lib/sanity';
 
 // Fungsi untuk mengambil data dari server
 async function fetchGriefData(grief: string) {
@@ -21,29 +22,19 @@ async function fetchGriefData(grief: string) {
   return data;
 }
 
-// Komponen Grief
-const Grief = ({ params, data }: { params: { grief: string }; data: any[] }) => {
+// Komponen Grief dengan async di dalamnya
+const Grief = async ({ params }: { params: { grief: string } }) => {
+  const data = await fetchGriefData(params.grief);
+
   return (
-    <section className='text-breakWhite pt-28 mb-20 px-10 md:px-24 flex flex-col'>
-      <div className='w-full text-[24px] font-semibold text-center'>
-        Project <span className='text-lightRed'>Categories</span>
+    <section className="text-breakWhite pt-28 mb-20 px-10 md:px-24 flex flex-col">
+      <div className="w-full text-[24px] font-semibold text-center">
+        Project <span className="text-lightRed">Categories</span>
       </div>
       <Categories />
-      <ProjectGrief params={params} data={data} />
+      <ProjectGrief params={params}/>
     </section>
   );
 };
-
-// Mengambil data dari server dan meneruskan ke komponen
-export async function getServerSideProps({ params }: { params: { grief: string } }) {
-  const data = await fetchGriefData(params.grief);
-
-  return {
-    props: {
-      params,
-      data,
-    },
-  };
-}
 
 export default Grief;
