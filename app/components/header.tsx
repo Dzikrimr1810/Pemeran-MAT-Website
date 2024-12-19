@@ -17,7 +17,7 @@ export default function Header () {
     }
 
     return (
-     <div className="text-white w-screen md:w-full z-40 fixed bg-black/50 backdrop-blur-md border-b-[1px] border-[#FF3300] flex items-center justify-center">
+     <div className="text-white w-full z-40 fixed bg-black/50 backdrop-blur-md border-b-[1px] border-[#FF3300] flex items-center justify-center">
         <div className="flex justify-between w-full p-5 md:hidden">
         <Link href={'/'}><Image alt="Logo-Mat" src={"/image/navbar/logo mat.png"} width={80} height={80} className="flex md:hidden"/></Link>
         <button type="button" className={`${androindNavbar && "hidden"} md:hidden flex flex-col align-middle justify-center gap-2`} onClick={toggleNavbar}>
