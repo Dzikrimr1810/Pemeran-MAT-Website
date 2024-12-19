@@ -36,9 +36,9 @@ export default function ImgProject ({images , nameProject} : imagesType) {
                     className="w-full h-full object-contain object-center"/>
             </div>
             <Carousel className="w-full md:h-[170px] h-[150px] flex items-center overflow-hidden">
-                <CarouselContent className="w-full h-full bg-slate-700 flex justify-start gap-1 md:gap-3">
+                <CarouselContent className="w-full h-full flex justify-start gap-1 md:gap-3">
                         {images.map((items,index)=>(
-                            <CarouselItem key={index} className="overflow-hidden bg-slate-800 basis-1/3 relative" onClick={()=>handleImageClick(index)}>                            
+                            <CarouselItem key={index} className="overflow-hidden basis-1/3 relative" onClick={()=>handleImageClick(index)}>                            
                             <div className={`w-full h-full absolute ${bigImage == index && "opacity-100 bg-gradient-to-t from-lightRed to-transparent"}`} />
                             <Image className="object-cover h-full" alt={nameProject} width={700} height={700} src={urlFor(items).url()}/>
                             </CarouselItem>
