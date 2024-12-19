@@ -19,7 +19,6 @@ console.log({merchandiseData})
                     Our <span className="text-lightRed"> Merchandise</span>
                 </div>
                 <div className="grid md:grid-cols-3 gap-5 grid-cols-2 mb-5">
-                    //product
                     {merchandiseData.map((items) => (
                         <div key={items.name} className={`${items.name=="Baju Sablon" && "col-start-1"} overflow-hidden md:p-[20px] p-2 border-breakWhite rounded-lg border-[1px]`}>
                             <div className="relative flex justify-center h-4/5 items-end">
