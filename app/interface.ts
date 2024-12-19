@@ -48,3 +48,7 @@ export interface updatesType {
     description: string;
     image:string;
 }
+
+export interface paramsType {
+    grief : string
+}
