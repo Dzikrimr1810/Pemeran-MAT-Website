@@ -45,7 +45,7 @@ export default function Hero () {
     }, []);
 
     return(
-        <div className=" flex font-light flex-col md:justify-between md:flex-row max-w-screen md:h-screen px-10 pt-24 md:px-20">
+        <div className="w-full flex font-light flex-col md:justify-between md:flex-row max-w-screen md:h-screen px-10 pt-24 md:px-20">
             <motion.div 
             initial={{
                 opacity: 0, // Awal transparan
