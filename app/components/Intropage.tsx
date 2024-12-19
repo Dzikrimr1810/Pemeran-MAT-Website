@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-export default function () {
+export default function Intropage() {
     const path = usePathname()
     console.log(path)
   useEffect(() => {

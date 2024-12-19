@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { client, urlFor } from "../lib/sanity"
+import { galleryType } from "../interface"
 
 async function setData () {
     const query = `*[_type=="gallery"]{
@@ -12,14 +13,14 @@ async function setData () {
 }
 
 export default async function Gallery () {
-    const data = await setData()
+    const data : galleryType[] = await setData()
 
     return (
         <section className="pt-28 md:px-20 px-10 text-breakWhite">
             <div>
             </div>
             <div>
-                {data.map((items : any, index : any) => (
+                {data.map((items, index) => (
                     <div key={index} className="relative flex flex-col">
                         <div className="absolute top-5 w-full z-20">
                             <div className="w-full text-center text-[24px] font-bold text-breakWhite"><span className="text-lightRed">{items.name}</span> Recap</div>
@@ -27,7 +28,7 @@ export default async function Gallery () {
                         <div className="relative w-full z-10">
                             <div className="absolute w-full h-1/5 bg-gradient-to-b from-background to-transparent"/>
                            <div className="grid grid-cols-4 grid-rows-2 bg-slate-600">
-                            {items.image.map((imgUrl : any, imgIndex : any) => {
+                            {items.image.map((imgUrl, imgIndex) => {
                                 const url = urlFor(imgUrl).url()
                                 return (
                                     <div key={imgIndex} className={`

@@ -1,11 +1,11 @@
 // 'use client'
 import { ScrollArea } from "@/components/ui/scroll-area"
 import ImgProject from "@/app/components/imgProject";
-import { simplifiedCatalogue } from "@/app/interface";
+import { simplifiedProject } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
 import Link from "next/link";
 
-async function getData(slug: string): Promise<simplifiedCatalogue | null> {
+async function getData(slug: string): Promise<simplifiedProject | null> {
   const query = `*[_type=='project' && slug.current == "${slug}"][0] {
     _id,
     _type,
@@ -33,7 +33,7 @@ export default async function ProjectPage({
 }: {
   params: { slug: string };
 }) {
-  const data: simplifiedCatalogue | null = await getData(params.slug);
+  const data: simplifiedProject | null = await getData(params.slug);
 
   // Validasi jika data tidak ditemukan
   if (!data) {
