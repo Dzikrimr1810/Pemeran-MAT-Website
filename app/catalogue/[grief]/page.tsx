@@ -24,7 +24,6 @@ async function fetchGriefData(grief: string) {
 
 // Komponen Grief dengan async di dalamnya
 const Grief = async ({ params }: { params: { grief: string } }) => {
-  const data = await fetchGriefData(params.grief);
 
   return (
     <section className="text-breakWhite pt-28 mb-20 px-10 md:px-24 flex flex-col">
