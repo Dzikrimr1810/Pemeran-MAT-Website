@@ -23,9 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="">
+    <html lang="en">
       <body
-        className={`${bricolage.className} antialiased bg-background`}
+        className={`${bricolage.className} bg-background w-screen`}
       >
         <Intropage />
       <Header />
