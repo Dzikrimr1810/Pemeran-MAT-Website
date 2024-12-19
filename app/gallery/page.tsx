@@ -16,7 +16,7 @@ export default async function Gallery () {
     const data : galleryType[] = await setData()
 
     return (
-        <section className="pt-28 md:px-20 px-10 text-breakWhite">
+        <section className="pt-28 overflow-clip md:w-full w-screen md:px-20 px-10 text-breakWhite">
             <div>
             </div>
             <div>
