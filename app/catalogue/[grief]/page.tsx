@@ -4,21 +4,23 @@ import ProjectGrief from '@/app/components/projectGrief';
 import { simplifiedCatalogue } from '@/app/interface';
 import getDataGrief from './datagrief';
 
-// Force dynamic rendering in Next.js
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic';
 
-// Correcting the type for params (no Promise wrapping)
+// Definisikan tipe untuk props
 interface GriefProps {
-  params: {
-    grief: string; // No async handling required here
-  };
+  params: Promise<{
+    grief: string;
+  }>;
 }
 
 const Grief = async ({ params }: GriefProps) => {
-  // No need to await 'params.grief' as it is not a Promise
-  const data: simplifiedCatalogue[] = await getDataGrief(params.grief);
+  // Resolve params jika itu adalah Promise
+  const resolvedParams = await params;
 
-  console.log(params, "itu");
+  // Gunakan resolvedParams.grief
+  const data: simplifiedCatalogue[] = await getDataGrief(resolvedParams.grief);
+
+  console.log(resolvedParams, 'params resolved');
 
   return (
     <section className="text-breakWhite pt-28 mb-20 px-10 md:px-24 flex flex-col">
