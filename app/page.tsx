@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
   <section className="text-breakWhite w-full relative overflow-clip">
-    <Image className="bg-gradient-to-l from-black to-transparent opacity-70 md:opacity-100 -z-50 absolute md:flex h-screen md:h-fit object-cover overflow-clip w-full" alt="hero Image Pameran absolute" width={1600} height={1400} src="/image/hero/FrameHero.png" />
+    <Image className="bg-gradient-to-l md:w-full w-screen from-black to-transparent opacity-70 md:opacity-100 -z-50 absolute md:flex h-screen md:h-fit object-cover overflow-clip" alt="hero Image Pameran absolute" width={1600} height={1400} src="/image/hero/FrameHero.png" />
     <Hero />
     <About />
     <Teaser />

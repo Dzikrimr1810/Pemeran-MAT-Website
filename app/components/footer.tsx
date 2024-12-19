@@ -17,7 +17,7 @@ const sosialMedia =[
 ]
 
     return (
-        <div className='px-10 self-end py-5 w-full bg-breakWhite gap-10 justify-between flex md:flex-row flex-col'>
+        <div className='px-10 self-end py-5 w-screen overflow-clip md:w-full bg-breakWhite gap-10 justify-between flex md:flex-row flex-col'>
             <div className=' '>
                 <Image src="/image/navbar/logo-mat2.png" width={150} height={150} alt='Logo MAT' 
                 className='w'/>

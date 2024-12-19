@@ -37,7 +37,7 @@ export default function Intropage() {
       }}
       className={`${path == "/" ? "flex" : "hidden"} z-50 fixed w-full h-full bg-gradient-to-t from-red-950 to-background`}
     >
-      <div className="w-full md:flex-row flex-col h-full font-thin text-breakWhite flex justify-center items-center">
+      <div className="md:w-full w-screen h-screen md:flex-row flex-col md:h-full font-thin text-breakWhite flex justify-center items-center">
         <div className="mb-5 md:mb-0 md:mr-20 mr-0 text-center md:text-start">
           <span className="font-semibold md:text-xl">DKV UNS 2023</span>
           <br />
