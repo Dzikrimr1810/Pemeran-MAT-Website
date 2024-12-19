@@ -8,7 +8,6 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
 import {
   AlertDialog,
-  AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogFooter,
@@ -16,7 +15,6 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
 
 async function getData() {
   const query = `*[_type=="update"]{

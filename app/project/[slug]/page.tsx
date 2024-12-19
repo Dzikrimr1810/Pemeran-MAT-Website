@@ -1,9 +1,8 @@
 // 'use client'
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea } from "@/components/ui/scroll-area"
 import ImgProject from "@/app/components/imgProject";
 import { simplifiedCatalogue } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
-import Image from "next/image";
 import Link from "next/link";
 
 async function getData(slug: string): Promise<simplifiedCatalogue | null> {

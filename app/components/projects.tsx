@@ -1,6 +1,6 @@
 import React from 'react'
 import { client } from '../lib/sanity';
-import { displiedProject, simplifiedCatalogue } from '../interface';
+import { simplifiedCatalogue } from '../interface';
 import Image from 'next/image';
 import Link from 'next/link';
 async function getData(){

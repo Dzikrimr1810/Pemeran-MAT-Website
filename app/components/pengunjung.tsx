@@ -8,9 +8,6 @@ const testy1 = testimonydata.slice(0, 12);
 const testy2 = testimonydata.slice(4, 12);
 const testy3 = testimonydata.slice(6, 15);
 
-interface ScrollProps {
-  speed: number; // Kecepatan scroll untuk setiap elemen
-}
 
 const Pengunjung = () => {
 

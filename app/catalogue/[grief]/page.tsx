@@ -1,8 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
-import Link from 'next/link';
-import { client } from '@/app/lib/sanity';
-import { simplifiedCatalogue } from '@/app/interface';
 import Categories from '@/app/components/categories';
 import ProjectGrief from '@/app/components/projectGrief';
 

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { client } from '@/app/lib/sanity';
 import { simplifiedCatalogue } from '@/app/interface';
-import Categories from '@/app/components/categories';
 
 async function getData(grief : string){
   const query = `*[_type=='project' && category->name == '${grief}'] {

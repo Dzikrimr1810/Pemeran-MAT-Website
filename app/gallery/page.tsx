@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { client, urlFor } from "../lib/sanity"
-import { galleryType } from "../interface"
 
 async function setData () {
     const query = `*[_type=="gallery"]{
@@ -21,7 +20,7 @@ export default async function Gallery () {
             </div>
             <div>
                 {data.map((items : any, index : any) => (
-                    <div className="relative flex flex-col">
+                    <div key={index} className="relative flex flex-col">
                         <div className="absolute top-5 w-full z-20">
                             <div className="w-full text-center text-[24px] font-bold text-breakWhite"><span className="text-lightRed">{items.name}</span> Recap</div>
                         </div>
