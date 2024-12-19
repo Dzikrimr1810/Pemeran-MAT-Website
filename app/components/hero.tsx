@@ -86,7 +86,7 @@ export default function Hero () {
                 className="flex w-full md:flex-col py-5  font-light">
                     <div>
                         <div className=" leading-tight md:text-end pt-5">December <br />
-                        <span className="text-[36px] font-medium">16-18</span>th 2024
+                        <span className="text-[36px] font-medium">20-22</span>th 2024
                     </div>
                     </div>
                     <div className="flex flex-col md:w-full w-2/3 justify-self-end items-end text-end md:items-end pt-2">
