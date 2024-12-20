@@ -12,7 +12,7 @@ const testy3 = testimonydata.slice(6, 15);
 const Pengunjung = () => {
 
   return (
-    <div className="text-white w-full mt-10 md:px-44 px-10 my-20 text-[14px] font-extralight">
+    <div className="text-white w-full mt-10 md:px-44 px-7 my-20 text-[14px] font-extralight">
       <div className="w-full text-center pb-10 text-xl text-lightRed font-bold uppercase md:mb-5">
         <span className="text-breakWhite">Apa kata</span> Mereka?
       </div>        
