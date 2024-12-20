@@ -39,7 +39,7 @@ const Updates = async () => {
         <div className="flex md:w-max w-full md:gap-0 gap-2 md:space-x-4 md:p-4">
           {data.map((items, index) => (
             <figure key={index} className="shrink-0 p-3 md:p-5 bg-gray border md:w-auto w-[300px] border-breakWhite rounded-xl">
-              <div className='rounded-lg overflow-hidden md:h-[500px] h-[200px]'>
+              <div className='rounded-lg overflow-hidden md:h-[500px] h-[250px]'>
                 <Image className='w-full h-full object-cover' alt={items.title} width={500} height={500} src={urlFor(items.image[0]).url()} />
               </div>
               <figcaption className="pt-2 text-xs text-muted-foreground mb-2">
