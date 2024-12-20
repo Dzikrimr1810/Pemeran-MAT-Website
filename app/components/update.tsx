@@ -15,7 +15,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
-
+export const dynamic = 'force-dynamic';
 async function getData() {
   const query = `*[_type=="update"]{
   title,

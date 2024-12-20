@@ -11,7 +11,7 @@ async function setData () {
     const data = await client.fetch(query)
     return data
 }
-
+export const dynamic = 'force-dynamic';
 export default async function Gallery () {
     const data : galleryType[] = await setData()
 

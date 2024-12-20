@@ -9,7 +9,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
  
-  
+export const dynamic = 'force-dynamic';
 
 interface imagesType {
     images: string[];

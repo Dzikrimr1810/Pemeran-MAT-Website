@@ -23,7 +23,7 @@ const data = await client.fetch(query);
 return data
 }
 
-
+export const dynamic = 'force-dynamic';
 
 const Projects = async () => {
 const data: simplifiedCatalogue[] = await getData()
