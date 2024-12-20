@@ -33,13 +33,13 @@ const Updates = async () => {
   console.log(data)
 
   return (
-    <div className="text-breakWhite w-full md:px-20 px-10 my-20">
+    <div className="text-breakWhite w-full md:pl-20 pl-10 my-20">
       <div className='w-full text-center text-xl text-lightRed font-bold uppercase mb-16'><span className='text-breakWhite'>Event</span> Updates</div>
       <ScrollArea className="text-breakWhite w-full">
         <div className="flex md:w-max w-full md:gap-0 gap-2 md:space-x-4 md:p-4">
           {data.map((items, index) => (
             <figure key={index} className="shrink-0 p-3 md:p-5 bg-gray border md:w-auto w-[300px] border-breakWhite rounded-xl">
-              <div className='rounded-lg overflow-hidden h-[500px]'>
+              <div className='rounded-lg overflow-hidden md:h-[500px] h-[200px]'>
                 <Image className='w-full h-full object-cover' alt={items.title} width={500} height={500} src={urlFor(items.image[0]).url()} />
               </div>
               <figcaption className="pt-2 text-xs text-muted-foreground mb-2">

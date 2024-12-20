@@ -3,7 +3,7 @@ import React from 'react'
 
 const Sambutan = () => {
   return (
-    <div className='text-white w-full md:px-20 px-10 my-20
+    <div className='text-white w-full md:px-20 px-10 md:my-20 my-32
     '>
         <div className='w-full text-center text-xl text-lightRed font-bold uppercase md:mb-5'><span className='text-breakWhite'>Sambutan</span> Ketua</div>
         <div className='flex md:flex-row flex-col justify-center items-center md:justify-start md:items-start'>

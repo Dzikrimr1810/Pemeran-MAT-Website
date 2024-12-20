@@ -54,7 +54,7 @@ export default function About () {
                         </motion.div>
                     ))}                                    
             </motion.div>
-            <div className=" bg-breakWhite text-black font-light w-full flex flex-col px-10 md:px-20 py-20">
+            <div className=" bg-breakWhite text-black font-light w-full flex flex-col px-10 md:px-20 py-20 mt-10 md:mt-0">
                 <div className="flex md:flex-row flex-col w-full justify-center items-center">
                     <div className="font-semibold text-2xl md:w-1/2 md:text-start text-center pb-5"><span className="text-lightRed font-bold">KATARSIS</span> <br />FROM US TO THE WORLD
                     </div>
