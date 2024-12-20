@@ -13,9 +13,9 @@ export default function Merchandise (){
 
 console.log({merchandiseData})
     return (
-        <section className="md:px-36 px-10 pt-28 overflow-clip md:w-full w-screen">
+        <section className="md:px-36 px-7 pt-28 overflow-clip md:w-full w-screen">
             <div>
-                <div className="w-full text-center justify-center items-center font-bold text-[24px] text-breakWhite">
+                <div className="w-full text-center mb-10 md:mb-0 justify-center items-center font-bold text-[24px] text-breakWhite">
                     Our <span className="text-lightRed"> Merchandise</span>
                 </div>
                 <div className="grid md:grid-cols-3 gap-5 grid-cols-2 mb-5">

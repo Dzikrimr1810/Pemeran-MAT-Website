@@ -16,7 +16,7 @@ export default async function Gallery () {
     const data : galleryType[] = await setData()
 
     return (
-        <section className="pt-28 overflow-clip md:w-full w-screen md:px-20 px-10 text-breakWhite">
+        <section className="pt-28 overflow-clip md:w-full w-screen md:px-20 text-breakWhite">
             <div>
             </div>
             <div>
@@ -26,7 +26,7 @@ export default async function Gallery () {
                             <div className="w-full text-center text-[24px] font-bold text-breakWhite"><span className="text-lightRed">{items.name}</span> Recap</div>
                         </div>
                         <div className="relative w-full z-10">
-                            <div className="absolute w-full h-1/5 bg-gradient-to-b from-background to-transparent"/>
+                            <div className="absolute w-full h-2/5 bg-gradient-to-b from-background to-transparent"/>
                            <div className="grid grid-cols-4 grid-rows-2 bg-slate-600">
                             {items.image.map((imgUrl, imgIndex) => {
                                 const url = urlFor(imgUrl).url()
