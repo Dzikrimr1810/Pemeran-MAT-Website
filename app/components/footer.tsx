@@ -44,8 +44,8 @@ const sosialMedia =[
             </div>
             <div className='md:w-[500px]'>
                 <div className='text-[28px] font-light text-lightRed'>
-                "Growth begins when we{" "}
-                <span className="font-bold">embrace loss and find strength</span> in healing."
+                Growth begins when we{" "}
+                <span className="font-bold">embrace loss and find strength</span> in healing.
                 </div>
                 <p className='font-bold pt-5 text-sm'>
                 Copyright © 2024 Dzikri Muhammad Ramadhan. All Rights Reserved.
