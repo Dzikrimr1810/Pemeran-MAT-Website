@@ -27,7 +27,7 @@ export default function Header () {
         </div>
         {/* navbar android */}
         <div className={`md:hidden flex-col h-screen justify-start items-end right-0 bg-gradient-to-l from-black to-transparent duration-2000 flex absolute font-light ${androindNavbar? 'opacity-100 delay-100 ease-in-out translate-x-0 top-0 block w-[300px]' : 'hidden opacity-20 w-0'}`}>
-        <button type="button" className={`md:hidden p-5 flex flex-col relative align-middle justify-center mr-3 gap-2`} onClick={toggleNavbar}>
+        <button type="button" className={`md:hidden p-5 flex flex-col mb-7 relative align-middle justify-center mr-3 gap-2`} onClick={toggleNavbar}>
             <div className={`${androindNavbar ? " rotate-45 w-[28px] absolute right-5 flex top-8  align-middle justify-center" : "duration-1000 ease-in-out rotate-0 "}  w-[28px] h-[2px] bg-lightRed`}></div>
             <div className={`${androindNavbar ? " -rotate-45 w-[28px] absolute right-5 flex top-8 align-middle justify-center" : "duration-1000 ease-in-out rotate-0 "} w-[28px] h-[2px] bg-lightRed`}></div>
         </button>

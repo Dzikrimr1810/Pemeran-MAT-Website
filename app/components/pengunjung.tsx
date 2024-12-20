@@ -32,10 +32,10 @@ const Pengunjung = () => {
           >
             {testy1.map((items, index) => (
               <div key={index} className="px-4 md:py-2 bg-[#463F3F] border-lightRed border-[1px] rounded-lg">
-                <div className="py-2 w-full text-sm leading-snug">{items.testimony}</div>
+                <div className="py-2 w-full md:text-sm text-[10px] leading-snug">{items.testimony}</div>
                 <div className="w-full flex justify-start py-2 border-t-[1px] border-slate-500 gap-2 items-center">
-                  <Image className="w-8 h-8 rounded-full object-cover" alt="Testimonial MAT" width={200} height={200} src={items.image} />
-                  <div>{items.name}</div>
+                  <Image className="md:w-8 md:h-8 h-6 w-6 rounded-full object-cover" alt="Testimonial MAT" width={200} height={200} src={items.image} />
+                  <div className='md:text-sm text-[12px]'>{items.name}</div>
                 </div>
               </div>
             ))}
@@ -54,10 +54,10 @@ const Pengunjung = () => {
           >
             {testy2.map((items, index) => (
               <div key={index} className="px-4 md:py-2 bg-[#463F3F] border-lightRed border-[1px] rounded-lg">
-                <div className="py-2 w-full text-sm leading-snug">{items.testimony}</div>
+                <div className="py-2 w-full md:text-sm text-[12px] leading-snug">{items.testimony}</div>
                 <div className="w-full flex justify-start py-2 border-t-[1px] border-slate-500 gap-2 items-center">
-                  <Image className="w-8 h-8 rounded-full object-cover" alt="Testimonial MAT" width={200} height={200} src={items.image} />
-                  <div>{items.name}</div>
+                  <Image className="md:w-8 md:h-8 h-6 w-6 rounded-full object-cover" alt="Testimonial MAT" width={200} height={200} src={items.image} />
+                  <div className='md:text-sm text-[12px]'>{items.name}</div>
                 </div>
               </div>
             ))}
@@ -76,10 +76,10 @@ const Pengunjung = () => {
           >
             {testy3.map((items, index) => (
               <div key={index} className="px-4 md:mt-0 mt-4 md:py-2 bg-[#463F3F] border-lightRed border-[1px] rounded-lg">
-                <div className="py-2 w-full text-sm leading-relaxed">{items.testimony}</div>
+                <div className="py-2 w-full md:text-sm text-[12px] leading-relaxed">{items.testimony}</div>
                 <div className="w-full flex justify-start py-2 border-t-[1px] border-slate-500 gap-2 items-center">
-                  <Image className="w-8 h-8 rounded-full object-cover" alt="Testimonial MAT" width={200} height={200} src={items.image} />
-                  <div>{items.name}</div>
+                  <Image className="md:w-8 md:h-8 h-6 w-6 rounded-full object-cover" alt="Testimonial MAT" width={200} height={200} src={items.image} />
+                  <div className='md:text-sm text-[12px]'>{items.name}</div>
                 </div>
               </div>
             ))}

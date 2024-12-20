@@ -43,7 +43,7 @@ export default function Intropage() {
           <br />
           Proudly Presents
         </div>
-        <div>
+        <div className="mb-10 md:mb-0">
           <Image
             className="w-[100px] md:w-[150px] object-cover"
             alt="logo MAT"

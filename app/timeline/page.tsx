@@ -31,7 +31,7 @@ const day3 = [
 
 export default function Timeline (){
     return (
-        <section className="overflow-clip md:w-full w-screen relative flex flex-col md:px-20 px-10 text-breakWhite pt-44 mb-20">
+        <section className="overflow-clip md:w-full w-screen relative flex flex-col md:px-20 px-5 pt-40 md:pt-44 text-breakWhite mb-20">
             {/* day1 */}
             <div className="w-full mb-32">
                 <div className="w-full relative md:mb-0 mb-10">

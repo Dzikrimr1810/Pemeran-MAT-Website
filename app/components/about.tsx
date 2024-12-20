@@ -17,7 +17,7 @@ export default function About () {
     return(
         <div className="text-white font-light">
             <motion.div 
-            className="flex md:flex-row mt-28 flex-col md:px-20 px-10 justify-between">                
+            className="flex md:flex-row mt-28 flex-col md:px-20 px-6 justify-between">                
                     {katarsisData.map((items,index)=>(
                         <motion.div 
                         initial={{
