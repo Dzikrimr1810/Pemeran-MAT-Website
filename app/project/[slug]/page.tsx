@@ -84,7 +84,7 @@ export default async function ProjectPage({
             <span className="font-semibold text-lightRed text-base pb-1">
               Description:
             </span>
-            <ScrollArea className="text-justify h-[300px] w-full">
+            <ScrollArea className="text-justify md:text-base text-[14px] h-[300px] w-full">
               {data.description}
             </ScrollArea>
           </div>
