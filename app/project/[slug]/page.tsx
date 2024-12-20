@@ -30,7 +30,7 @@ export default async function ProjectPage({
   console.log("Fetched data:", data);
 
   return (
-    <section className="overflow-clip md:w-full w-screen md:px-32 px-10 text-breakWhite pt-28 mb-20">
+    <section className="overflow-clip md:w-full w-screen md:px-32 px-5 text-breakWhite pt-28 mb-20">
       <div className="w-full mb-10 md:mb-6 text-center">
         <div className="font-semibold text-[24px] md:mb-4">
           Project <span className="text-lightRed">Details</span>

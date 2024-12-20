@@ -35,7 +35,7 @@ export default function ImgProject ({images , nameProject} : imagesType) {
                     src={urlFor(images[bigImage]).url()}
                     className="w-full h-full object-contain object-center"/>
             </div>
-            <Carousel className="w-full md:h-[170px] h-[150px] flex items-center overflow-hidden">
+            <Carousel className="w-full md:h-[170px] h-[100px] flex items-center overflow-hidden">
                 <CarouselContent className="w-full h-full flex justify-start gap-1 md:gap-3">
                         {images.map((items,index)=>(
                             <CarouselItem key={index} className="overflow-hidden basis-1/3 relative" onClick={()=>handleImageClick(index)}>                            
