@@ -25,7 +25,7 @@ const Grief = async ({ params }: GriefProps) => {
   return (
     <section className="text-breakWhite overflow-clip md:w-full w-screen mb-20 md:px-20 px-5 pt-24 md:pt-28 flex flex-col">
       <div className="w-full text-[24px] font-semibold text-center">
-        Project <span className="text-lightRed">Categories</span>
+        Project <span className="text-lightRed">Catalogue</span>
       </div>
       <Categories />
       <ProjectGrief data={data} />
