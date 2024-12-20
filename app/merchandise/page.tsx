@@ -26,9 +26,9 @@ console.log({merchandiseData})
                                 <Image className="bg-[#E7EEEE] h-full w-auto object-cover" alt={items.name} width={500} height={500} src={items.image} />
                             </div>
                             <div className="-translate-y-8 md:translate-y-0 font-light text-breakWhite flex flex-col justify-center items-center">
-                                <div className="font-bold text-[18px] md:text-[24px] text-center">{items.name}</div>
+                                <div className="font-bold text-[16px] md:text-[24px] text-center">{items.name}</div>
                                 <div className="text-center text-[10px] md:text-[12px] text-gray-500">{items.details}</div>
-                                <div className="text-lightRed">Rp<span className="text-lightRed text-[18px] md:text-[24px] font-bold">{items.harga}</span>,00</div>
+                                <div className="text-lightRed text-[10px] md:text-[24px]">Rp<span className="text-lightRed text-[14px] md:text-[24px] font-bold">{items.harga}</span>,00</div>
                             </div>
                         </div>
                     ))}
