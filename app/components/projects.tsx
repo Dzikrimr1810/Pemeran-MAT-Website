@@ -36,7 +36,7 @@ const data: simplifiedCatalogue[] = await getData()
               <Image className='w-full object-center group-hover:scale-105 duration-300' alt={items.name} width={700} height={700} src={items.imageUrl}/>           
             </div>
             <div className='flex flex-col'>
-              <div className='flex text-[9px] md:text-[9px] gap-1 md:gap-2 my-1 justify-start items-center'>
+              <div className='flex text-[8px] md:text-[9px] gap-1 md:gap-2 my-1 justify-start items-center'>
                 <div className={`px-3 md:px-4 py-[2px] bg-gray text-[8pxa] md:text-[9] rounded-full flex justify-center items-center
                   ${items.categoryName == "Denial" && "text-[#B70000]"}
                   ${items.categoryName == "Anger" && "text-[#FF3300]"}

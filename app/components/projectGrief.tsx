@@ -28,7 +28,7 @@ const ProjectGrief: React.FC<ProjectGriefProps> = ({ data }) => { // Terima data
           <div className='flex flex-col'>
             <div className='flex text-[10px] gap-2 my-1 justify-start items-center'>
               <div
-                className={`px-4 py-[2px] bg-gray rounded-full
+                className={`px-3 md:px-4 py-[2px] text-[8px] md:text-[10px] bg-gray rounded-full
                 ${items.categoryName === "Denial" && "text-[#B70000]"}
                 ${items.categoryName === "Anger" && "text-[#FF3300]"}
                 ${items.categoryName === "Bargaining" && "text-[#00F2FF]"}
@@ -37,7 +37,7 @@ const ProjectGrief: React.FC<ProjectGriefProps> = ({ data }) => { // Terima data
               `}>
                 {items.categoryName}
               </div>
-              <div className='px-4 py-[2px] bg-gray rounded-full'>{items.typeproject}</div>
+              <div className='px-3 md:px-4 py-[2px] text-[8px] md:text-[10px] bg-gray rounded-full'>{items.typeproject}</div>
             </div>
             <div className='text-[20px] font-semibold'>
               {items.name.length > 30 ? items.name.slice(0, 30) + '...' : items.name}
